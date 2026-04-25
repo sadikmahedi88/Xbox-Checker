@@ -1,4 +1,4 @@
-🎮 Murphy – Xbox / Minecraft Full Capture
+🎮 Murphy Xbox & Minecraft Checker – Full Capture
 
 Advanced Microsoft account checker – detects Xbox Game Pass, Minecraft Java, subscriptions, extracts full profile (gamertag, UUID, capes, gamerpic) with live Telegram reports.
 
@@ -27,11 +27,11 @@ Advanced Microsoft account checker – detects Xbox Game Pass, Minecraft Java, s
 ✨ Features
 
 Feature Description
-🎮 Xbox / Minecraft detection Identifies Game Pass, Ultimate, Minecraft Java, Bedrock, Legends, Dungeons.
+🎮 Xbox / Minecraft detection Automatically identifies Xbox Game Pass, Ultimate, Minecraft Java, Bedrock, Legends, Dungeons.
 👤 Full profile extraction Gamertag, gamerpic, account tier, reputation, Minecraft username, UUID, capes.
-📊 Live terminal table Real‑time progress, hits, bad, 2FA, CPM, and current account.
+📊 Live terminal table Real‑time progress, hits, bad, 2FA, CPM, and current account being checked.
 🤖 Telegram integration Sends welcome video, each hit with full details, final summary, and result files.
-⚡ Multi‑threaded Optimised retry logic, handles hundreds of combos per minute.
+⚡ Multi‑threaded Handles hundreds of combos per minute with optimised retry logic.
 📁 Organised results Auto‑creates folders: Minecraft, GamePass, Xbox, Not Linked, 2FA.
 
 ---
@@ -52,7 +52,7 @@ colorama
 urllib3
 ```
 
-The script auto‑installs missing modules, but manual install is recommended.
+💡 The script will auto‑install missing modules on first run, but manual installation is recommended.
 
 ---
 
@@ -64,17 +64,17 @@ python Xboxgampass.py
 
 Interactive prompts
 
-1. Telegram ID – get from @userinfobot.
-2. Bot Token – create a bot with @BotFather.
+1. Telegram ID – get it from @userinfobot.
+2. Bot Token – create a bot with @BotFather and copy the token.
 3. Combo file path – a .txt file with email:password (one per line).
 
-After entering data, the script:
+After entering your data, the script will:
 
-· Sends a welcome video to your Telegram chat.
-· Waits for ENTER to start.
-· Displays a live table.
-· Sends every hit to Telegram with full details.
-· Sends a final summary and uploads all result files.
+· Send a welcome video to your Telegram chat.
+· Wait for you to press ENTER to start.
+· Display a live table with progress and results.
+· Send every hit to Telegram with full details (gamertag, UUID, capes, subscriptions).
+· At the end, send a summary and upload all result files.
 
 ---
 
@@ -96,19 +96,19 @@ Results/
     └── 2fa_by_@pyabrodies.txt
 ```
 
-Each hit contains email, password, gamertag, Minecraft name, UUID, capes, subscriptions.
+Each hit file contains detailed capture lines with email, password, gamertag, Minecraft name, UUID, etc.
 
 ---
 
 🤖 Telegram Integration
 
 What is sent Format When
-Welcome video Video + caption Start
-Individual hit HTML message (with gamerpic) Immediately after valid account
-Final summary HTML message After all accounts checked
-Result files .txt documents After summary
+Welcome video Video + caption At the start
+Individual hit HTML message with gamerpic (if available) Immediately after a valid account is found
+Final summary HTML message After all accounts are checked
+Result files .txt documents After the summary
 
-Example hit message:
+Telegram message example (Hit):
 
 ```
 ✅ HIT FOUND!
@@ -121,20 +121,20 @@ Example hit message:
 ⭐ Reputation: Good
 ━━━━━━━━━━━━━━━━━━━━
 ⛏ MC Name: CoolGamer
-🆔 UUID: 12345678...
+🆔 UUID: 12345678-1234-1234-1234-123456789abc
 🎭 Capes: Minecon 2016, Pancake
 ━━━━━━━━━━━━━━━━━━━━
 🏷 Type: Xbox Game Pass Ultimate
 🎫 Subscriptions: Game Pass Ultimate
 ━━━━━━━━━━━━━━━━━━━━
-📢 @Quatrehuit| 👤 @pypkg
+📢 Channel | 👤 @pypkg
 ```
 
 ---
 
 📊 Live Terminal Table
 
-The script shows a live table while running (like the one in the screenshot you provided):
+The script shows a beautiful live table while running:
 
 ```
 ┌──────────────────────────────────────────────────┐
@@ -162,9 +162,9 @@ The script shows a live table while running (like the one in the screenshot you 
 
 ⚙️ Requirements
 
-· Python 3.8+
-· Internet connection (for Telegram & Microsoft APIs)
-· Telegram bot token and chat ID (optional – without Telegram, script runs locally)
+· Python 3.8 or higher
+· Active internet connection (for Telegram & Microsoft APIs)
+· Telegram bot token and chat ID (optional – without them the script still works locally)
 
 ---
 
