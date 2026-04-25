@@ -1,9 +1,9 @@
-🎮 Xbox / Minecraft Account Checker – Full Capture
+🎮 Murphy – Xbox / Minecraft Full Capture
 
-Advanced Microsoft account checker that detects Xbox Game Pass, Minecraft Java, Xbox subscriptions, and extracts full profile data (gamertag, UUID, capes, gamerpic, etc.) – with real‑time Telegram reports.
+Advanced Microsoft account checker – detects Xbox Game Pass, Minecraft Java, subscriptions, extracts full profile (gamertag, UUID, capes, gamerpic) with live Telegram reports.
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3000&pause=500&color=39FF14&center=true&vCenter=true&width=600&lines=Xbox+%26+Minecraft+Checker;Full+Capture+%2B+Telegram+Reports;Multi‑threaded+%7C+Proxyless" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=500&color=39FF14&center=true&vCenter=true&width=600&lines=Murphy+Xbox+%26+Minecraft;Full+Capture+%2B+Telegram+Reports;Multi‑threaded+%7C+Proxyless" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -27,21 +27,20 @@ Advanced Microsoft account checker that detects Xbox Game Pass, Minecraft Java, 
 ✨ Features
 
 Feature Description
-🎮 Xbox / Minecraft detection Automatically identifies Xbox Game Pass, Ultimate, Minecraft Java, Bedrock, Legends, Dungeons.
+🎮 Xbox / Minecraft detection Identifies Game Pass, Ultimate, Minecraft Java, Bedrock, Legends, Dungeons.
 👤 Full profile extraction Gamertag, gamerpic, account tier, reputation, Minecraft username, UUID, capes.
-📊 Live terminal table Real‑time progress, hits, bad, 2FA, CPM, and current account being checked.
-🤖 Telegram integration Sends welcome video, each hit with full details, final summary, and result files (.txt).
-⚡ Multi‑threaded Handles hundreds of combos per minute with optimised retry logic.
-🛡️ Proxyless & secure Uses official Microsoft/Xbox APIs, no external proxies required.
-📁 Organised results Automatically creates folders: Minecraft, GamePass, Xbox, Not Linked, 2FA.
+📊 Live terminal table Real‑time progress, hits, bad, 2FA, CPM, and current account.
+🤖 Telegram integration Sends welcome video, each hit with full details, final summary, and result files.
+⚡ Multi‑threaded Optimised retry logic, handles hundreds of combos per minute.
+📁 Organised results Auto‑creates folders: Minecraft, GamePass, Xbox, Not Linked, 2FA.
 
 ---
 
 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/xbox-minecraft-checker.git
-cd xbox-minecraft-checker
+git clone https://github.com/yourusername/murphy-xbox-checker.git
+cd murphy-xbox-checker
 pip install -r requirements.txt
 ```
 
@@ -53,7 +52,7 @@ colorama
 urllib3
 ```
 
-💡 The script will auto‑install missing modules on first run, but manual installation is recommended.
+The script auto‑installs missing modules, but manual install is recommended.
 
 ---
 
@@ -65,17 +64,17 @@ python Xboxgampass.py
 
 Interactive prompts
 
-1. Telegram ID – get it from @userinfobot.
-2. Bot Token – create a bot with @BotFather and copy the token.
+1. Telegram ID – get from @userinfobot.
+2. Bot Token – create a bot with @BotFather.
 3. Combo file path – a .txt file with email:password (one per line).
 
-After entering your data, the script will:
+After entering data, the script:
 
-· Send a welcome video to your Telegram chat.
-· Wait for you to press ENTER to start.
-· Display a live table with progress and results.
-· Send every hit to Telegram with full details (gamertag, UUID, capes, subscriptions).
-· At the end, send a summary and upload all result files.
+· Sends a welcome video to your Telegram chat.
+· Waits for ENTER to start.
+· Displays a live table.
+· Sends every hit to Telegram with full details.
+· Sends a final summary and uploads all result files.
 
 ---
 
@@ -97,19 +96,19 @@ Results/
     └── 2fa_by_@pyabrodies.txt
 ```
 
-Each hit file contains detailed capture lines with email, password, gamertag, Minecraft name, UUID, etc.
+Each hit contains email, password, gamertag, Minecraft name, UUID, capes, subscriptions.
 
 ---
 
 🤖 Telegram Integration
 
 What is sent Format When
-Welcome video Video + caption At the start
-Individual hit HTML message with gamerpic (if available) Immediately after a valid account is found
-Final summary HTML message After all accounts are checked
-Result files .txt documents (zipped automatically) After the summary
+Welcome video Video + caption Start
+Individual hit HTML message (with gamerpic) Immediately after valid account
+Final summary HTML message After all accounts checked
+Result files .txt documents After summary
 
-Telegram message example (Hit):
+Example hit message:
 
 ```
 ✅ HIT FOUND!
@@ -122,20 +121,20 @@ Telegram message example (Hit):
 ⭐ Reputation: Good
 ━━━━━━━━━━━━━━━━━━━━
 ⛏ MC Name: CoolGamer
-🆔 UUID: 12345678-1234-1234-1234-123456789abc
+🆔 UUID: 12345678...
 🎭 Capes: Minecon 2016, Pancake
 ━━━━━━━━━━━━━━━━━━━━
 🏷 Type: Xbox Game Pass Ultimate
 🎫 Subscriptions: Game Pass Ultimate
 ━━━━━━━━━━━━━━━━━━━━
-📢 @HoTmIlToOLs | 👤 @pyabrodies
+📢 @Quatrehuit| 👤 @pypkg
 ```
 
 ---
 
 📊 Live Terminal Table
 
-The script shows a beautiful live table while running:
+The script shows a live table while running (like the one in the screenshot you provided):
 
 ```
 ┌──────────────────────────────────────────────────┐
@@ -163,9 +162,9 @@ The script shows a beautiful live table while running:
 
 ⚙️ Requirements
 
-· Python 3.8 or higher
-· Active internet connection (for Telegram & Microsoft APIs)
-· Telegram bot token and chat ID (optional – without them the script still works locally)
+· Python 3.8+
+· Internet connection (for Telegram & Microsoft APIs)
+· Telegram bot token and chat ID (optional – without Telegram, script runs locally)
 
 ---
 
@@ -186,5 +185,5 @@ MIT – free to use, modify, and distribute with proper attribution.
 ---
 
 <p align="center">
-  Made with ❤️ by <b>@pypkg</b> – <i>Xbox / Minecraft Full Capture</i>
+  Made with ❤️ by <b>@pypkg</b> – <i>Murphy Xbox & Minecraft Full Capture</i>
 </p>
