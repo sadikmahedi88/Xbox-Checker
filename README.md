@@ -1,9 +1,12 @@
-🎮 Murphy Xbox & Minecraft Checker – Full Capture
+)
 
-Advanced Microsoft account checker – detects Xbox Game Pass, Minecraft Java, subscriptions, extracts full profile (gamertag, UUID, capes, gamerpic) with live Telegram reports.
+```markdown
+# 🎮 Murphy Xbox & Minecraft Checker – Full Capture
+
+> **Advanced Microsoft account checker** – detects Xbox Game Pass, Minecraft Java, subscriptions, extracts full profile (gamertag, UUID, capes, gamerpic) with live Telegram reports.
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=500&color=39FF14&center=true&vCenter=true&width=600&lines=Murphy+Xbox+%26+Minecraft;Full+Capture+%2B+Telegram+Reports;Multi‑threaded+%7C+Proxyless" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3000&pause=500&color=39FF14&center=true&vCenter=true&width=600&lines=Murphy+Xbox+%26+Minecraft;Full+Capture+%2B+Telegram+Reports;Multi‑threaded+%7C+Proxyless" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -24,19 +27,20 @@ Advanced Microsoft account checker – detects Xbox Game Pass, Minecraft Java, s
 
 ---
 
-✨ Features
+## ✨ Features
 
-Feature Description
-🎮 Xbox / Minecraft detection Automatically identifies Xbox Game Pass, Ultimate, Minecraft Java, Bedrock, Legends, Dungeons.
-👤 Full profile extraction Gamertag, gamerpic, account tier, reputation, Minecraft username, UUID, capes.
-📊 Live terminal table Real‑time progress, hits, bad, 2FA, CPM, and current account being checked.
-🤖 Telegram integration Sends welcome video, each hit with full details, final summary, and result files.
-⚡ Multi‑threaded Handles hundreds of combos per minute with optimised retry logic.
-📁 Organised results Auto‑creates folders: Minecraft, GamePass, Xbox, Not Linked, 2FA.
+| Feature | Description |
+|---------|-------------|
+| 🎮 **Xbox / Minecraft detection** | Automatically identifies Xbox Game Pass, Ultimate, Minecraft Java, Bedrock, Legends, Dungeons. |
+| 👤 **Full profile extraction** | Gamertag, gamerpic, account tier, reputation, Minecraft username, UUID, capes. |
+| 📊 **Live terminal table** | Real‑time progress, hits, bad, 2FA, CPM, and current account being checked. |
+| 🤖 **Telegram integration** | Sends welcome video, each hit with full details, final summary, and result files. |
+| ⚡ **Multi‑threaded** | Handles hundreds of combos per minute with optimised retry logic. |
+| 📁 **Organised results** | Auto‑creates folders: `Minecraft`, `GamePass`, `Xbox`, `Not Linked`, `2FA`. |
 
 ---
 
-📦 Installation
+## 📦 Installation
 
 ```bash
 git clone https://github.com/yourusername/murphy-xbox-checker.git
@@ -187,3 +191,6 @@ MIT – free to use, modify, and distribute with proper attribution.
 <p align="center">
   Made with ❤️ by <b>@pypkg</b> – <i>Murphy Xbox & Minecraft Full Capture</i>
 </p>
+```
+
+---
