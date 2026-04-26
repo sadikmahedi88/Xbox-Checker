@@ -4,9 +4,9 @@
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/murphy-xbox-checker.git
-cd murphy-xbox-checker
-pip install -r requirements.txt
+https://github.com/sadikmahedi88/Xbox-Checker.git
+cd Xbox-Checker
+python xboxgampass.py
 ```
 
 requirements.txt (create if missing):
